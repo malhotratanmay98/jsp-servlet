@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Calculator</title>
+</head>
+<body>
+<form action="cal" method="get">
+
+Enter first no <input type="text" name="x">
+Enter Second no <input type="text" name="y">
+</form>
+</body>
+</html>

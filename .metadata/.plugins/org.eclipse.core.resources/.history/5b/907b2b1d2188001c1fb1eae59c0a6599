@@ -1,0 +1,5 @@
+package com.model.persistance.user;
+
+public interface UserDao {
+
+}

@@ -1,0 +1,41 @@
+package com.web.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class EmpController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html");
+		
+		PrintWriter out = response.getWriter();
+		
+		String name=request.getParameter("ename");
+		String city=request.getParameter("city");
+		String designation=request.getParameter("desi");
+		Double salary=Double.parseDouble(request.getParameter("salary")); //you have to convert string to doubel.
+		
+		
+		out.print("name of employee: "+ name + "<br>" );
+		out.print("city of employee: "+ city + "<br>" );
+		out.print("Designation of employee: "+ designation + "<br>" );
+		out.print("salary of employee: "+ salary );
+		
+	}
+
+}

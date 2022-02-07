@@ -1,0 +1,24 @@
+package com.demo;
+
+
+//Selected ServletContextListener
+
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+
+public class DogListener implements ServletContextListener {
+
+
+    public void contextInitialized(ServletContextEvent sce)  { 
+         System.out.println("Servlet context is initialized");
+    }
+   
+    public void contextDestroyed(ServletContextEvent sce)  { 
+         System.out.println("Servlet context is Destroyed");
+    }
+
+
+	
+}

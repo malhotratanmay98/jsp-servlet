@@ -1,0 +1,33 @@
+package com.demo;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+/**
+ * Application Lifecycle Listener implementation class DogListener
+ *
+ */
+public class DogListener implements ServletContextListener {
+
+    /**
+     * Default constructor. 
+     */
+    public DogListener() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+
+	/**
+     * @see ServletContextListener#contextInitialized(ServletContextEvent)
+     */
+    public void contextInitialized(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+	
+}
